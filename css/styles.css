@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css?family=Overpass:400,600,700,900");
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: #D5C6B4;
+  height: 100%;
+  overflow: hidden;
+  font-family: "DotGothic16", sans-serif;
+}
+
+.title {
+  text-align: center;
+  font-size: 70px;
+  font-weight: 700;
+  color: #1D1C1A;
+}
+
+.score {
+  text-align: center;
+  color: #1D1C1A;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 1rem;
+}
+.score #score {
+  font-size: 50px;
+}
+
+.game-text {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  left: 0;
+  top: 0;
+  color: #fff;
+  font-size: 50px;
+}
+.game-text span {
+  font-size: 100px;
+}
+.game-text button {
+  display: inline-block;
+  margin: 1rem auto;
+  border: none;
+  padding: 0.65em 1em 0.5em;
+  border-radius: 0.2em;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  line-height: 1em;
+  color: white;
+  background: #5197d4;
+  text-shadow: 0 0.05em 0 #266399;
+  box-shadow: 0 0.1em 0.2em rgba(28, 73, 112, 0.5);
+  -webkit-animation: rattle 5s infinite;
+          animation: rattle 5s infinite;
+}
+.game-text button {
+  color: white;
+  background: #5197d4;
+  text-shadow: 0 0.05em 0 #266399;
+  box-shadow: 0 0.1em 0.2em rgba(28, 73, 112, 0.5);
+  -webkit-animation: rattle 5s infinite;
+          animation: rattle 5s infinite;
+}
+
+@-webkit-keyframes rattle {
+  0% {
+    transform: rotateZ(0) scale(1);
+  }
+  94% {
+    transform: rotateZ(0) scale(1);
+    box-shadow: 0 0.1em 0.2em rgba(28, 73, 112, 0.5);
+  }
+  95% {
+    transform: rotateZ(2deg) scale(1.1);
+    box-shadow: 0 0.1em 0.5em rgba(38, 99, 153, 0.5);
+  }
+  97% {
+    transform: rotateZ(-2deg) scale(1.1);
+  }
+  99% {
+    transform: rotateZ(2deg) scale(1.1);
+    box-shadow: 0 0.1em 0.5em rgba(38, 99, 153, 0.5);
+  }
+  100% {
+    transform: rotateZ(0) scale(1);
+    box-shadow: 0 0.1em 0.2em rgba(28, 73, 112, 0.5);
+  }
+}
+
+@keyframes rattle {
+  0% {
+    transform: rotateZ(0) scale(1);
+  }
+  94% {
+    transform: rotateZ(0) scale(1);
+    box-shadow: 0 0.1em 0.2em rgba(28, 73, 112, 0.5);
+  }
+  95% {
+    transform: rotateZ(2deg) scale(1.1);
+    box-shadow: 0 0.1em 0.5em rgba(38, 99, 153, 0.5);
+  }
+  97% {
+    transform: rotateZ(-2deg) scale(1.1);
+  }
+  99% {
+    transform: rotateZ(2deg) scale(1.1);
+    box-shadow: 0 0.1em 0.5em rgba(38, 99, 153, 0.5);
+  }
+  100% {
+    transform: rotateZ(0) scale(1);
+    box-shadow: 0 0.1em 0.2em rgba(28, 73, 112, 0.5);
+  }
+}
+.playground ul {
+  border: 1px solid #F2E7D4;
+  width: 250px;
+  margin: 0 auto;
+}
+.playground ul li {
+  width: 100%;
+  height: 25px;
+}
+.playground ul li ul {
+  display: flex;
+}
+.playground ul li ul li {
+  width: 25px;
+  height: 25px;
+  outline: 1px solid #F2E7D4;
+}
+
+.square {
+  background: #CC99C9;
+}
+
+.elLeft {
+  background: #B4D9EF;
+}
+
+.tree {
+  background: #9EE09E;
+}
+
+.elRight {
+  background: #FDFD97;
+}
+
+.zeeLeft {
+  background: #FEB144;
+}
+
+.zeeRight {
+  background: #5E5CB2;
+}
+
+.bar {
+  background: #FF6663;
+}/*# sourceMappingURL=styles.css.map */
